@@ -5,7 +5,7 @@
     <title>駅並べ 1.0</title>
     <style>
         body {
-          /* background: #eeeeee; */
+          background: #eeeeee;
           font-family: Meiryo;
         }
         .head {
@@ -37,8 +37,8 @@
   <body>
 
     <div class="head">
-        <h1>駅並べ 1.0</h1>
-        <a href="#top">はじめに</a>
+        <h1>駅並べ</h1>
+        <a href="#top">遊び方</a>
         <a href="#main">メイン画面</a>
         <a href="#selline">路線選択画面</a>
         <a href="#player">プレイヤー</a>
@@ -47,13 +47,13 @@
     </div>
 
     <div class="text">
-      <h2>はじめに</h2>
+      <h2>遊び方</h2>
       <p>
       「駅並べ」は全国9000駅を路線毎に並べるゲームです。初回起動時はまず画面上部の「路線選択」をタップし路線選択画面を表示します。
       </p>
     </div>
     <div class="png">
-      <p><img src="sc03_tokaido.png" alt="東海道新幹線" width="50%" /></p>
+      <p><img src="main_init.png" alt="初回メイン画面" width="50%" /></p>
     </div>
     <div class="text">
       <p>
@@ -61,36 +61,63 @@
       </p>
     </div>
     <div class="png">
-      <p><img src="sc02_selline.png" alt="路線選択" width="50%" /></p>
+      <p><img src="selline.png" alt="路線選択" width="50%" /></p>
     </div>
     <div class="text">
       <p>
-      タップすると「東海道新幹線」の駅を並べる画面に変わります。最初はランダムに並んでいますので「東京」から「新大阪」までの17駅を路線図の順に並べます。駅の並べ替えは駅名の左側にある「ハンドル（上下の矢印）」をドラッグすることにより行います。17駅全てを路線図順に並べ終わるとコンプリートです。
+      タップすると「東海道新幹線」の駅を並べる画面に変わります。最初はランダムに並んでいますので「東京」から「新大阪」までの17駅を路線図の順に並べます。駅の並べ替えは駅名の左側にある「ハンドル（上下の矢印）」をドラッグすることにより行います。
       </p>
     </div>
     <div class="png">
-      <p><img src="sc03_tokaido.png" alt="東海道新幹線" width="50%" /></p>
+      <p><img src="main_tokaido.png" alt="東海道新幹線" width="50%" /></p>
+    </div>
+    <div class="text">
+      <p>
+      17駅全てを順に並べ終わるとコンプリートです。路線名の下に「complete」とコンプリートタイムが赤文字で表示されます。
+      </p>
+    </div>
+    <div class="png">
+      <p><img src="main_comp.png" alt="東海道新幹線" width="50%" /></p>
+    </div>
+
+    <div class="head">
+      <a href="#top">遊び方</a>
+      <a href="#main">メイン画面</a>
+      <a href="#selline">路線選択画面</a>
+      <a href="#player">プレイヤー</a>
+      <a href="#setting">設定</a>
+      <a href="#others">その他</a>
     </div>
 
     <div class="text">
       <h2 id="main">メイン画面</h2>
       <p>
-      アプリの起動で最初に表示される、路線毎の駅を並べる画面です。上部に路線名、その下に駅のリストが表示されます。路線名、駅名の左側には「Hint」のリンクがあります。リンク先はWikipediaか各鉄道事業者へのリンクです。駅順が分からない場合のヒントになるページです。
+      アプリ起動で最初に表示される画面です。上部に路線名、その下に駅のリストが表示されます。駅名の右側には駅を並べ替えるための「ハンドル」（上下の矢印）があります。路線名、駅名の左側には「Hint」のリンクがあります。リンク先はWikipediaまたは各鉄道事業者のサイトです。駅順が分からない場合のヒントになるサイトです。
       </p>
       <p>
-      駅順の基本は起点から終点ですが、逆の場合、駅ナンバリング順、それ以外の場合もあります。（<a href="#others">その他</a>にも説明がありますのでご覧ください）
+      駅順の基本は起点から終点ですが、逆の場合や駅ナンバリング順、それ以外の場合もあります。また正式な起点から終点以外の駅を含む場合があります。詳しくは<a href="#others">路線データについて</a>をご覧ください。
       </p>
-    </div>
+      <p>
+      別の路線を表示するには画面上部の「路線選択」をタップします。
+      </p>
+      </div>
     <div class="png">
-      <p><img src="sc03_tokaido.png" alt="東海道新幹線" width="50%" /></p>
+      <p><img src="main_tokaido.png" alt="東海道新幹線" width="50%" /></p>
     </div>
     
+    <div class="head">
+      <a href="#top">遊び方</a>
+      <a href="#main">メイン画面</a>
+      <a href="#selline">路線選択画面</a>
+      <a href="#player">プレイヤー</a>
+      <a href="#setting">設定</a>
+      <a href="#others">その他</a>
+    </div>
+
     <div class="text">
         <h2 id="selline">路線選択画面</h2>
         <p>
-          路線を選択する画面です。
-          路線は600以上あります。
-          画面上部の「地域選択」から地域を選択することができます。
+          路線を選択する画面です。路線数は600以上あり、2000年以降に廃止された路線と駅も含みます。画面上部の「地域選択」のタップで地域を選択することができます。
           <ul>
             <li>ぜんぶ</li>
             <li>北海道</li>
@@ -105,7 +132,7 @@
       </p>
     </div>
       <div class="png">
-        <p><img src="sc04_area.png" alt="地域選択" width="50%" /></p>
+        <p><img src="selline_area.png" alt="地域選択" width="50%" /></p>
     </div>
     <div class="text">
       <p>
@@ -113,7 +140,16 @@
     </p>
     </div>
     <div class="png">
-        <p><img src="sc06_find.png" alt="地域選択" width="50%" /></p>
+        <p><img src="selline_search.png" alt="地域選択" width="50%" /></p>
+    </div>
+
+    <div class="head">
+      <a href="#top">遊び方</a>
+      <a href="#main">メイン画面</a>
+      <a href="#selline">路線選択画面</a>
+      <a href="#player">プレイヤー</a>
+      <a href="#setting">設定</a>
+      <a href="#others">その他</a>
     </div>
 
     <div class="text">
@@ -123,7 +159,7 @@
       </p>
     </div>
     <div class="png">
-      <p><img src="sc05_player.png" alt="プレイヤー" width="50%" /></p>
+      <p><img src="main_player.png" alt="プレイヤー" width="50%" /></p>
     </div>
     <div class="text">
         <p>
@@ -131,7 +167,16 @@
         </p>
     </div>
     <div class="png">
-      <p><img src="sc08_record.png" alt="プレイ記録" width="50%" /></p>
+      <p><img src="main_record.png" alt="プレイ記録" width="50%" /></p>
+    </div>
+
+    <div class="head">
+      <a href="#top">遊び方</a>
+      <a href="#main">メイン画面</a>
+      <a href="#selline">路線選択画面</a>
+      <a href="#player">プレイヤー</a>
+      <a href="#setting">設定</a>
+      <a href="#others">その他</a>
     </div>
   
     <div class="text">
@@ -148,17 +193,26 @@
       </p>
     </div>
     <div class="png">
-      <p><img src="sc07_setting.png" alt="設定" width="50%" /></p>
+      <p><img src="setting.png" alt="設定" width="50%" /></p>
+    </div>
+    
+    <div class="head">
+      <a href="#top">遊び方</a>
+      <a href="#main">メイン画面</a>
+      <a href="#selline">路線選択画面</a>
+      <a href="#player">プレイヤー</a>
+      <a href="#setting">設定</a>
+      <a href="#others">その他</a>
     </div>
 
     <div class="text">
       <h2 id="others">その他</h2>
       <h3>路線データについて</h3>
       <p>
-      アプリ内の路線データはネット上の情報（主にWikipediaと各鉄道事業者のホームページ）を参考に作成しています。路線分け、路線範囲、路線や駅の名称はアプリ作成者の独断（単なる好み）で記載しており正式なものとは違う場合があります。これはちょっと、と思われるところがあるかもしれません。また路線データに間違いがあるかもしれませんがご了承ください。
+      アプリ内の路線データはネット上の情報（主にWikipediaと各鉄道事業者のサイト）を参考に作成しています。路線分け、路線範囲、路線や駅の名称はアプリ作成者の独断（単なる好み）で作成しており正式なものとは違う場合があります。これはちょっとと思われるところや間違い等あるかもしれませんがご了承ください。
       </p>
       <p>
-      駅順の基本は起点から終点ですが、逆の場合、駅ナンバリング順、それ以外の場合もあります。また正式な起点から終点以外の駅を含む場合があります。例えばJR千歳線の場合、起点は沼ノ端駅、終点は白石駅ですが、アプリ上では苫小牧駅から札幌駅となっており、室蘭本線と函館本線の一部を含みます。
+      駅順の基本は起点から終点ですが、逆の場合や駅ナンバリング順、それ以外の場合もあります。また正式な起点から終点以外の駅を含む場合があります。例えばJR千歳線の場合、起点は沼ノ端駅、終点は白石駅ですが、アプリ上では苫小牧駅から札幌駅となっており、室蘭本線と函館本線の一部を含みます。
       </p>
       <p>
       正式な路線としては存在しない路線も記載しています。例えば、京浜東北線、湘南新宿ライン、秋田新幹線と言う路線は正式にはありませんが、それぞれ停車駅を路線として記載しています。
@@ -178,7 +232,7 @@
 
       <h3>効果音</h3>
       <p>
-      以下のサイトの効果音を使用しております。
+      以下のサイトで入手した効果音を使用しております。
       </p>
       <a href="https://taira-komori.jpn.org/index.html" target="_blank" rel="noopener noreferrer">無料効果音で遊ぼう！</a>
       
@@ -206,13 +260,16 @@
       <p>
       jae02546@gmail.com
       </p>
+    </div>
 
-
-
-</div>
-
-
-
+    <div class="head">
+      <a href="#top">遊び方</a>
+      <a href="#main">メイン画面</a>
+      <a href="#selline">路線選択画面</a>
+      <a href="#player">プレイヤー</a>
+      <a href="#setting">設定</a>
+      <a href="#others">その他</a>
+    </div>
 
   </body>
 </html>
