@@ -2,7 +2,7 @@
 <html lang=“ja”>
   <head>
     <meta charset=“UFT-8”>
-    <title>駅並べ</title>
+    <title>駅並べ 1.0</title>
     <style>
         body {
           background: #eeeeee;
@@ -20,6 +20,7 @@
           /* border: 1px solid #cccccc; */
           /* background: #ffffff; */
           width: 80%;
+          max-width: 800px;
           margin: auto;
           padding: 0 5%;
         }
@@ -27,6 +28,7 @@
           /* border: 1px solid #cccccc; */
           /* background: #ffffff; */
           width: 80%;
+          max-width: 800px;
           margin: auto;
           padding: 0 5%;
           text-align: center;
@@ -53,7 +55,7 @@
       </p>
     </div>
     <div class="png">
-      <p><img src="main_init.png" alt="初回メイン画面" width="50%" /></p>
+      <p><img src="main_init.png" alt="初回メイン画面" width="50%"/></p>
     </div>
     <div class="text">
       <p>
@@ -92,17 +94,20 @@
     <div class="text">
       <h2 id="main">メイン画面</h2>
       <p>
-      アプリ起動で最初に表示される画面です。上部に路線名、その下に駅のリストが表示されます。駅名の右側には駅を並べ替えるための「ハンドル」（上下の矢印）があります。路線名、駅名の左側には「Hint」のリンクがあります。リンク先はWikipediaまたは各鉄道事業者のサイトです。駅順が分からない場合のヒントになるサイトです。
+      アプリ起動で最初に表示される画面です。上部に路線名、その下に駅名のリストが表示されます。駅名の右側には駅を並べ替えるための「ハンドル」（上下の矢印）があります。
       </p>
       <p>
-      駅順の基本は起点から終点ですが、逆の場合や駅ナンバリング順、それ以外の場合もあります。また正式な起点から終点以外の駅を含む場合があります。詳しくは<a href="#others">路線データについて</a>をご覧ください。
+        駅順の基本は起点から終点ですが、逆の場合や駅ナンバリング順、それ以外の場合もあります。また正式な起点から終点以外の駅を含む場合があります。詳しくは<a href="#others">路線データについて</a>をご覧ください。
+        </p>
+        <p>
+      路線名、駅名の左側には「Hint」のリンクがあります。リンク先はWikipediaまたは各鉄道事業者のサイトです。駅順が分からない場合のヒントになるサイトです。
       </p>
       <p>
-      別の路線を表示するには画面上部の「路線選択」をタップします。
+      別の路線に切り替えるには画面上部の「路線選択」をタップします。
       </p>
       </div>
     <div class="png">
-      <p><img src="main_tokaido.png" alt="東海道新幹線" width="50%" /></p>
+      <p><img src="main_tokaido2.png" alt="東海道新幹線" width="50%" /></p>
     </div>
     
     <div class="head">
@@ -117,7 +122,19 @@
     <div class="text">
         <h2 id="selline">路線選択画面</h2>
         <p>
-          路線を選択する画面です。路線数は600以上あり、2000年以降に廃止された路線と駅も含みます。画面上部の「地域選択」のタップで地域を選択することができます。
+          路線を選択する画面です。路線数は600以上あり2000年以降に廃止された路線と駅も含みます。「地域選択」のタップで地域を選択することができます。また「虫眼鏡」のタップで任意の文字列を入力し検索することもできます。
+        </p>
+    </div>
+  </div>
+  <div class="png">
+    <p><img src="selline2.png" alt="地域選択" width="50%" /></p>
+</div>
+      
+          
+          
+    <div class="text">
+      <p>
+        地域は以下から選択できます。
           <ul>
             <li>ぜんぶ</li>
             <li>北海道</li>
@@ -136,7 +153,7 @@
     </div>
     <div class="text">
       <p>
-      また画面上部の「虫眼鏡」のタップで任意の文字列を入力し検索することもできます。検索対象は選択されている地域内です。
+      文字列での検索対象はその時点で選択されている地域内です。
     </p>
     </div>
     <div class="png">
